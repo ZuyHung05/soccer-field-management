@@ -47,13 +47,7 @@ public class UserController {
         return userService.filterSanByTen(ten);
     }
 
-//    // Tìm kiếm sân theo loại sân
-//    @GetMapping("/loaiSan")
-//    public List<San> getSanByLoai(@RequestParam String loaiSan) {
-//        return userService.filterSanByLoaiSan(loaiSan);
-//    }
-    // Lấy thông tin sân theo ID - sau khi xem các sân thì vào xem thông tin chi tiết sân để đặt sân
-
+    // Xem chi tiet san
     @GetMapping("/{id}")
     public SanDTO getSan(@PathVariable Long id) {
         return userService.getSanInfoById(id);
