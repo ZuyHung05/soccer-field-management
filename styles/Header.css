@@ -1,0 +1,253 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(28, 9, 73);
+  height: 60px;
+  padding: 10px 20px;
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  margin: 0;
+}
+
+.navbar-item {
+  list-style: none;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navleft {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-sanbong:hover {
+  cursor: pointer;
+}
+
+.fa-solid {
+  font-size: 30px;
+  margin-top: 19px;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.fa-solid.cc {
+  margin: 0;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.menu {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0px;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  background-color: rgb(28, 9, 73);
+  border-right: 1px rgb(253, 85, 85) solid;
+  z-index: 3;
+  width: 292px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 2px solid white;
+}
+
+.menu.show {
+  transform: translateX(0);
+}
+
+.menu-item {
+  list-style: none;
+  border-bottom: 1px solid rgba(255, 253, 253, 0.5);
+}
+
+.layout.show {
+  z-index: 2;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-item.aa {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  gap: 30px;
+}
+
+.menu-item.bb {
+  padding: 20px;
+}
+
+.menu-item.bb:hover {
+  background-color: brown;
+}
+
+.menu-item-bb {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item-aa {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.fa-solid.aa {
+  margin: 0;
+}
+
+.nav-signout {
+  text-decoration: none;
+  color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navleft {
+    gap: 15px;
+  }
+
+  .navbar-item {
+    font-size: 16px;
+  }
+
+  .fa-solid {
+    font-size: 24px;
+  }
+
+  .fa-solid.cc {
+    font-size: 20px;
+  }
+}
+
+/* Add these styles to the existing Header.css file */
+
+.user-dropdown {
+  position: relative;
+}
+
+.user-display {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.user-display:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.user-icon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.user-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 220px;
+  background-color: rgb(28, 9, 73);
+  border: 2px solid white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transform: translateY(-20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.user-menu.show {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.user-menu-header {
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.user-icon-large {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.username-large {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.user-menu-items {
+  padding: 10px 0;
+}
+
+.user-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.user-menu-item:hover {
+  background-color: brown;
+}
+
+.menu-icon {
+  margin-right: 10px;
+  width: 16px;
+}
+
+.layout-user {
+  display: none;
+}
+
+.layout-user.show {
+  z-index: 2;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+}

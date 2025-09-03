@@ -1,0 +1,204 @@
+.lichdat-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.lichdat-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.lichdat-search {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.lichdat-search input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.lichdat-search button {
+  background-color: rgb(28, 9, 73);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lichdat-search button:hover {
+  background-color: #4a2c92;
+}
+
+.lichdat-table {
+  overflow-x: auto;
+  margin-bottom: 30px;
+}
+
+.lichdat-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lichdat-table th,
+.lichdat-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.lichdat-table th {
+  background-color: rgb(28, 9, 73);
+  color: white;
+}
+
+.lichdat-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.confirmed {
+  color: green;
+  font-weight: bold;
+}
+
+.pending {
+  color: orange;
+  font-weight: bold;
+}
+
+.edit-btn,
+.cancel-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.edit-btn {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.lichdat-info {
+  background-color: #e9ecef;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.lichdat-info h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.lichdat-info ul {
+  padding-left: 20px;
+}
+
+.lichdat-info li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .lichdat-search {
+    flex-direction: column;
+  }
+
+  .lichdat-table th,
+  .lichdat-table td {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+
+  .edit-btn,
+  .cancel-btn {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Add these styles to the existing Lichdat.css file */
+
+.qr-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.qr-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.qr-content img {
+  margin: 10px 0;
+}
+
+.edit-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 10px gray;
+  z-index: 998;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.edit-popup input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.edit-popup button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-popup button:first-of-type {
+  background-color: rgb(28, 9, 73);
+  color: white;
+}
+
+.edit-popup button:last-of-type {
+  background-color: #e74c3c;
+  color: white;
+}
