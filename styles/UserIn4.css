@@ -1,0 +1,101 @@
+.user-card-container {
+  width: 100%;
+  display: flex;
+  border-radius: 40px;
+  margin: 10px;
+  overflow: hidden;
+  border: 3px solid rgb(28, 9, 73);
+}
+
+.user-card {
+  min-height: 55vh;
+  margin: 40px;
+  padding: 30px;
+  font-size: 30px;
+  width: 40%;
+  background-color: antiquewhite;
+  border-radius: 20px;
+}
+
+.user-card-left {
+  background-color: #6a4a9e; /* Màu tím nhạt */
+  border: 20px solid white;
+  border-radius: 50px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.welcome-text {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic; /* Kiểu chữ nghiêng */
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2); /* Màu nền mờ */
+  border-radius: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Thêm bóng chữ để đẹp hơn */
+  font-family: 'Dancing Script', cursive; /* Font nghiêng và đẹp, cần import font này */
+}
+
+.userId {
+  color: red;
+}
+
+.user-info {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  font-weight: bold;
+  width: 150px;
+  margin-right: 10px;
+}
+
+/* Styles for input when editing */
+.user-info input {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 18px;
+  /* Loại bỏ border */
+  background-color: #f9f9f9;
+  border-radius: 0; /* Loại bỏ bo tròn viền */
+  transition: background-color 0.3s;
+}
+
+.user-info input:focus {
+  background-color: #e0e0e0; /* Thay đổi màu nền khi focus */
+  outline: none; /* Loại bỏ outline */
+}
+
+/* Button styles */
+.user-info button {
+  padding: 8px 20px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.user-info button:hover {
+  background-color: #0056b3;
+}
+
+/* Ensure span (non-editing mode) looks consistent */
+.user-info span[id] {
+  font-size: 18px;
+  padding: 5px 10px;
+  /* Loại bỏ border và background */
+  border: none;
+  background-color: transparent;
+  border-radius: 0;
+}

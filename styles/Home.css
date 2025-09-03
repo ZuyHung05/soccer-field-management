@@ -1,0 +1,334 @@
+/* Welcome section */
+.welcome {
+  color: white;
+  position: relative;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  margin-bottom: 40px;
+}
+
+.welcome-left {
+  background-image: url('../../public/images/pexels-pablo-cordero-2150906-3845970.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+  padding: 20px;
+}
+
+.welcome-right {
+  background-image: url('../../public/images/pexels-pixabay-262524.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.khunggio.dat {
+  background-color: #ffcccc; /* Màu đỏ nhạt */
+  color: #ff0000; /* Chữ màu đỏ */
+  opacity: 0.7; /* Tùy chọn để làm mờ */
+}
+.khunggio.dat .btn-book {
+  display: none; /* Ẩn nút đặt nếu đã đặt */
+}
+.chaomung {
+  font-family: 'Dancing Script', cursive;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  border: 2px rgb(255, 255, 255) solid;
+  width: 80%;
+}
+
+.chaomung.xx {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.chaomung.ss {
+  width: 70%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.datsan-fast {
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  margin-left: 40px;
+  background-color: rgba(80, 67, 105, 0.2);
+  border-radius: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  font-family: 'Dancing Script', cursive;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.datsan-fast:hover {
+  background-color: rgb(75, 56, 56);
+  cursor: pointer;
+}
+
+/* Section titles */
+.danhsachsanbong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.dssb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.dssb::after,
+.dssb::before {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: black;
+  margin: 0 10px;
+}
+
+/* Search and field list section */
+.listsearch {
+  display: flex;
+  border-radius: 20px;
+  background-color: rgba(37, 13, 88, 0.2);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.searchfield {
+  padding: 40px;
+  background-color: rgb(28, 9, 73);
+  color: white;
+  width: 20%;
+}
+
+.searchfield h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.searchfield label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.searchfield input,
+.searchfield select,
+.searchfield button {
+  padding: 8px;
+  border: 0;
+  margin: 8px 0;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+.searchfield button {
+  margin-top: 20px;
+  background-color: #fff;
+  color: rgb(28, 9, 73);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.searchfield button:hover {
+  background-color: rgb(28, 9, 73);
+  color: white;
+  border: 1px solid white;
+}
+
+.sanbong-container {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex; /* Thêm flex để xếp ngang */
+  flex-wrap: wrap; /* Cho phép xuống dòng */
+  gap: 20px; /* Khoảng cách giữa các sân */
+  justify-content: flex-start; /* Căn trái */
+}
+
+/* Sửa lại .san-item */
+.san-item {
+  border: 2px solid rgba(28, 9, 73, 0.3);
+  padding: 15px;
+  width: calc(25% - 20px); /* Chiều rộng 25% để chứa 4 sân, trừ đi gap */
+  box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước */
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 1024px) {
+  .san-item {
+    width: calc(50% - 20px); /* 2 sân mỗi hàng */
+  }
+}
+
+
+.sanbong {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.san-item {
+  border: 2px solid rgba(28, 9, 73, 0.3);
+  padding: 15px;
+  width: 250px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.san-item h3 {
+  margin-top: 0;
+  color: rgb(28, 9, 73);
+}
+
+.btn-datsan {
+  background-color: rgb(28, 9, 73);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-datsan:hover {
+  background-color: #246b45;
+}
+
+/* Overlay styles */
+.overlay {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background: white;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.overlay-content {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: red;
+}
+
+.thoikhoabieu {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.ngay {
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.khunggio {
+  margin-top: 5px;
+  padding: 5px;
+  background: #d9ffd9;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.khunggio.dat {
+  background: #ff7f7f;
+}
+
+.btn-book {
+  margin-top: 5px;
+  padding: 5px 8px;
+  background: rgb(28, 9, 73);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-book:hover {
+  background: #45a049;
+}
+
+.san-info {
+  margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .welcome {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .welcome-left,
+  .welcome-right {
+    width: 100%;
+    clip-path: none;
+  }
+
+  .welcome-right {
+    height: 200px;
+  }
+
+  .chaomung.xx,
+  .chaomung.ss {
+    width: 90%;
+  }
+
+  .datsan-fast {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .listsearch {
+    flex-direction: column;
+  }
+
+  .searchfield {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .thoikhoabieu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
